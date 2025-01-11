@@ -1,0 +1,335 @@
+[debug] [2025-01-11T10:42:35.870Z] ----------------------------------------------------------------------
+[debug] [2025-01-11T10:42:35.872Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jordi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-11T10:42:35.872Z] CLI Version:   13.29.1
+[debug] [2025-01-11T10:42:35.872Z] Platform:      win32
+[debug] [2025-01-11T10:42:35.872Z] Node Version:  v22.13.0
+[debug] [2025-01-11T10:42:35.872Z] Time:          Sat Jan 11 2025 11:42:35 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-01-11T10:42:35.872Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-11T10:42:35.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-11T10:42:35.878Z] > authorizing via signed-in user (jordibuss22@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jordi\OneDrive\Desktop\web Tcuido
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-11T10:42:45.942Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:45.942Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:45.944Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-01-11T10:42:46.444Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-01-11T10:42:46.444Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project tcuido-adfe8 (Tcuido) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-01-11T10:42:50.047Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:50.047Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:50.047Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo [none]
+[debug] [2025-01-11T10:42:50.777Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo 200
+[debug] [2025-01-11T10:42:50.777Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo {"name":"projects/tcuido-adfe8/billingInfo","projectId":"tcuido-adfe8","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-01-11T10:42:50.778Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:50.778Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:42:50.778Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/sqladmin.googleapis.com [none]
+[debug] [2025-01-11T10:42:50.778Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/sqladmin.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:42:51.586Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/sqladmin.googleapis.com 200
+[debug] [2025-01-11T10:42:51.586Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\Users\Jordi\OneDrive\Desktop\web Tcuido 
+[info] i  Wrote new config to C:\Users\Jordi\OneDrive\Desktop\web Tcuido\dataconnect\connector/connector.yaml 
+[info] I0111 11:43:10.860211   23080 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Jordi\\OneDrive\\Desktop\\web Tcuido\\dataconnect-generated\\js\\default-connector"
+I0111 11:43:10.874605   23080 generate.go:40] Generated all sources. Writing them to disk...
+I0111 11:43:10.875844   23080 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Jordi\\OneDrive\\Desktop\\web Tcuido\\dataconnect-generated\\js\\default-connector"
+Generated sources: esm\index.esm.js [183B] esm\package.json [17B] index.cjs.js [224B] package.json [634B] index.d.ts [264B] 
+I0111 11:43:10.897581   23080 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/tcuido-adfe8/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-01-11T10:43:11.690Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:11.690Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:11.691Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/firestore.googleapis.com [none]
+[debug] [2025-01-11T10:43:11.691Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/firestore.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:43:12.467Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/firestore.googleapis.com 200
+[debug] [2025-01-11T10:43:12.468Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/firestore.googleapis.com [omitted]
+[debug] [2025-01-11T10:43:12.468Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:12.469Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:12.469Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default) [none]
+[debug] [2025-01-11T10:43:12.755Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default) 200
+[debug] [2025-01-11T10:43:12.755Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default) {"name":"projects/tcuido-adfe8/databases/(default)","uid":"f3d848a8-46d8-4e0d-9585-780148f64412","createTime":"2025-01-11T10:38:16.031025Z","updateTime":"2025-01-11T10:38:16.031025Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-01-11T10:38:16.031025Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPer6Ia+7YoDMMW8zoi97YoD"}
+[debug] [2025-01-11T10:43:12.756Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-01-11T10:43:12.756Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-01-11T10:43:12.756Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-11T10:43:12.756Z] > authorizing via signed-in user (jordibuss22@gmail.com)
+[debug] [2025-01-11T10:43:12.757Z] [iam] checking project tcuido-adfe8 for permissions ["firebase.projects.get"]
+[debug] [2025-01-11T10:43:12.757Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:12.757Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:43:12.757Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions [none]
+[debug] [2025-01-11T10:43:12.757Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:43:12.757Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-11T10:43:13.416Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions 200
+[debug] [2025-01-11T10:43:13.417Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-01-11T10:47:45.882Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:45.883Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:45.883Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/releases pageSize=10&pageToken=
+[debug] [2025-01-11T10:47:46.629Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/releases 200
+[debug] [2025-01-11T10:47:46.629Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/releases {"releases":[{"name":"projects/tcuido-adfe8/releases/cloud.firestore","rulesetName":"projects/tcuido-adfe8/rulesets/0ca70a1c-c015-4626-9762-fc75de95c9da","createTime":"2025-01-11T10:38:22.448462Z","updateTime":"2025-01-11T10:38:22.448462Z"}]}
+[debug] [2025-01-11T10:47:46.629Z] Found ruleset: projects/tcuido-adfe8/rulesets/0ca70a1c-c015-4626-9762-fc75de95c9da
+[debug] [2025-01-11T10:47:46.631Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:46.631Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:46.631Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/rulesets/0ca70a1c-c015-4626-9762-fc75de95c9da [none]
+[debug] [2025-01-11T10:47:47.275Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/rulesets/0ca70a1c-c015-4626-9762-fc75de95c9da 200
+[debug] [2025-01-11T10:47:47.276Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/tcuido-adfe8/rulesets/0ca70a1c-c015-4626-9762-fc75de95c9da [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-01-11T10:47:49.234Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:49.234Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:49.234Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:49.234Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:49.235Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-01-11T10:47:49.237Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-01-11T10:47:49.488Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-01-11T10:47:49.488Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-01-11T10:47:49.778Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-01-11T10:47:49.779Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/tcuido-adfe8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/tcuido-adfe8/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-01-11T10:47:55.697Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-11T10:47:55.697Z] > authorizing via signed-in user (jordibuss22@gmail.com)
+[debug] [2025-01-11T10:47:55.697Z] [iam] checking project tcuido-adfe8 for permissions ["firebase.projects.get"]
+[debug] [2025-01-11T10:47:55.697Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:55.697Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:55.697Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions [none]
+[debug] [2025-01-11T10:47:55.697Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:47:55.697Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-11T10:47:56.327Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions 200
+[debug] [2025-01-11T10:47:56.327Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-11T10:47:56.327Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:56.327Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:56.327Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:56.327Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:56.328Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-11T10:47:56.328Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:47:56.330Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-11T10:47:56.330Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:47:57.179Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-11T10:47:57.179Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-11T10:47:57.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-11T10:47:57.210Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-01-11T10:47:57.210Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:57.210Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:47:57.211Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-01-11T10:47:57.211Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:47:58.417Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-01-11T10:47:58.417Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-01-11T10:48:08.430Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:48:08.431Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:48:08.431Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-11T10:48:08.431Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:48:09.253Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-11T10:48:09.254Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 0.9.12
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] Start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-01-11T10:51:46.073Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-11T10:51:46.073Z] > authorizing via signed-in user (jordibuss22@gmail.com)
+[debug] [2025-01-11T10:51:46.074Z] [iam] checking project tcuido-adfe8 for permissions ["firebase.projects.get"]
+[debug] [2025-01-11T10:51:46.074Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.074Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.074Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions [none]
+[debug] [2025-01-11T10:51:46.074Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:51:46.074Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-11T10:51:46.764Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions 200
+[debug] [2025-01-11T10:51:46.765Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tcuido-adfe8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-11T10:51:46.765Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.765Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.765Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.765Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:51:46.765Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-11T10:51:46.765Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:51:46.768Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-11T10:51:46.768Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/tcuido-adfe8
+[debug] [2025-01-11T10:51:47.568Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-11T10:51:47.568Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-11T10:51:47.604Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-11T10:51:47.604Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tcuido-adfe8/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote tcuido/package.json 
+[info] +  Wrote tcuido/.eslintrc.js 
+[info] +  Wrote tcuido/index.js 
+[info] +  Wrote tcuido/.gitignore 
+[info] 
+=== Apphosting Setup
+[debug] [2025-01-11T10:55:14.735Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:55:14.735Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:55:14.735Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo [none]
+[debug] [2025-01-11T10:55:15.505Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo 200
+[debug] [2025-01-11T10:55:15.505Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/tcuido-adfe8/billingInfo {"name":"projects/tcuido-adfe8/billingInfo","projectId":"tcuido-adfe8","billingAccountName":"billingAccounts/01D3F5-22D5ED-56BE89","billingEnabled":true}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-01-11T10:55:15.508Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:55:15.508Z] Checked if tokens are valid: true, expires at: 1736595316844
+[debug] [2025-01-11T10:55:15.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tcuido-adfe8 [none]
+[debug] [2025-01-11T10:55:15.816Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tcuido-adfe8 200
+[debug] [2025-01-11T10:55:15.816Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tcuido-adfe8 {"projectId":"tcuido-adfe8","projectNumber":"283394513561","displayName":"Tcuido","name":"projects/tcuido-adfe8","resources":{"hostingSite":"tcuido-adfe8"},"state":"ACTIVE","etag":"1_26144345-9191-43f4-b62f-a862a90ea23f"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-01-11T10:56:33.643Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-01-11T10:56:33.716Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-01-11T10:56:33.716Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.1.0","browserURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.tgz"},"live":{"version":"11.1","browserURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.1.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.1.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Jordi\OneDrive\Desktop\web Tcuido is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=491387751&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-01-11T10:56:47.545Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-01-11T10:56:47.546Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-01-11T10:56:47.859Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-01-11T10:56:47.859Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-01-11T10:56:47.862Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-01-11T10:56:48.215Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-01-11T10:56:48.216Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jordi22m","id":193794633,"node_id":"U_kgDOC40SSQ","avatar_url":"https://avatars.githubusercontent.com/u/193794633?v=4","gravatar_id":"","url":"https://api.github.com/users/jordi22m","html_url":"https://github.com/jordi22m","followers_url":"https://api.github.com/users/jordi22m/followers","following_url":"https://api.github.com/users/jordi22m/following{/other_user}","gists_url":"https://api.github.com/users/jordi22m/gists{/gist_id}","starred_url":"https://api.github.com/users/jordi22m/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jordi22m/subscriptions","organizations_url":"https://api.github.com/users/jordi22m/orgs","repos_url":"https://api.github.com/users/jordi22m/repos","events_url":"https://api.github.com/users/jordi22m/events{/privacy}","received_events_url":"https://api.github.com/users/jordi22m/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2025-01-05T12:25:59Z","updated_at":"2025-01-05T17:13:10Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":264,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as jordi22m 
+[info] 
+[debug] [2025-01-11T11:01:16.638Z] >>> [apiv2][query] GET https://api.github.com/repos/web Tcuido/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:01:16.906Z] <<< [apiv2][status] GET https://api.github.com/repos/web Tcuido/actions/secrets/public-key 404
+[debug] [2025-01-11T11:01:16.906Z] <<< [apiv2][body] GET https://api.github.com/repos/web Tcuido/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-01-11T11:02:51.684Z] >>> [apiv2][query] GET https://api.github.com/repos/jordibuss22/web-tcuido/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:02:51.996Z] <<< [apiv2][status] GET https://api.github.com/repos/jordibuss22/web-tcuido/actions/secrets/public-key 404
+[debug] [2025-01-11T11:02:51.996Z] <<< [apiv2][body] GET https://api.github.com/repos/jordibuss22/web-tcuido/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-01-11T11:05:44.170Z] >>> [apiv2][query] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:05:44.464Z] <<< [apiv2][status] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key 404
+[debug] [2025-01-11T11:05:44.464Z] <<< [apiv2][body] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-01-11T11:06:07.021Z] >>> [apiv2][query] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:06:07.288Z] <<< [apiv2][status] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key 404
+[debug] [2025-01-11T11:06:07.288Z] <<< [apiv2][body] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-01-11T11:06:15.406Z] >>> [apiv2][query] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:06:15.673Z] <<< [apiv2][status] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key 404
+[debug] [2025-01-11T11:06:15.673Z] <<< [apiv2][body] GET https://api.github.com/repos/jordi22m/ Cuidado/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-01-11T11:09:52.592Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/jordi22m/Tcuido/actions/secrets/public-key type=owner
+[debug] [2025-01-11T11:09:52.858Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/jordi22m/Tcuido/actions/secrets/public-key 404
+[debug] [2025-01-11T11:09:52.859Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/jordi22m/Tcuido/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
